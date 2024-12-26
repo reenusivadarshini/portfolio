@@ -44,4 +44,9 @@ export class HomeComponent {
       setTimeout(() => this.typeText(), 1000); // Wait before starting to type again
     }
   }
+
+  downloadCV()
+  {
+    
+  }
 }
