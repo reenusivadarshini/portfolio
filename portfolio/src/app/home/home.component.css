@@ -1,17 +1,44 @@
-.right{
-    background-image: url("../../assets/images/bg-image.png");
-    height: 100vh;
-    display: flex;
-    color:rgb(251, 251, 251);
-    margin-top: 10px;
+.content {
+  display: flex;
+  align-items: stretch; /* Ensures both columns stretch to the same height */
+  min-height: 120vh
 }
 
-.left
-{
-    background-color: #013220;
-    margin-top: 10px;
-
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
 }
+
+.left {
+  background-color: #013220;
+  margin-top: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right {
+  background-image: url("../../assets/images/bg-image.png");
+  background-size: cover;
+  color: rgb(251, 251, 251);
+  margin-top: 10px;
+  flex: 1; /* Allows the right div to expand and fill available space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-me {
+  max-width: 800px;
+  width: 85%;
+  background: #F5EEDC; /* Warm beige */
+  border-radius: 16px;
+  padding: 20px 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
 
  .typewriter  {
      font-size: 4em !important;
@@ -28,16 +55,6 @@
     }
   }
 
-  .about-me {
-    max-width: 800px;
-    width: 85%;
-    height:94%;
-    background: #F5EEDC; /* Warm beige */
-    border-radius: 16px;
-    padding: 20px 40px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }  
 
   .about-me h1 {
     font-size: 36px;
@@ -100,4 +117,10 @@
     background: #013220; /* Dark green */
     color: #F5EEDC; /* Beige */
     box-shadow: 0 2px 8px rgba(1, 50, 32, 0.5);
+  }
+
+  @media (max-width: 430px) { /* Adjust max-width as needed for your breakpoint */
+    .right {
+      display: none; /* Hides the right column */
+    }
   }
