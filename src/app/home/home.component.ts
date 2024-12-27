@@ -47,6 +47,9 @@ export class HomeComponent {
 
   downloadCV()
   {
-    
+      const link = document.createElement('a');
+      link.href = 'assets/Resume_Reenu_.pdf'; // Correct path
+      link.download = 'Resume.pdf'; 
+      link.click();
+    } 
   }
-}
