@@ -85,7 +85,7 @@ export class HomeComponent {
       { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKKD1WnLCNesDsNCd5IbtclS14mQFz38k68A&s', alt: 'Photo 5' },
       { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1algCxzhfPNQPKuHMGu1LhxKZKHO3AqndBw&s', alt: 'Photo 5' },
       { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbltQbi3ENubKbN2XcfZt-CSkWJz3nGbkeFw&s', alt: 'Photo 5' },
-      { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREF9sv_FRQJXERQyswm0MxNg8LCokOiRIkI', alt: 'Photo 6' },
+      { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeTB_nGOzR28YzVty0z1l7nE836nR7oXCFrg&s', alt: 'Photo 6' },
    
     ]
   ];

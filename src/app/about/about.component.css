@@ -1,0 +1,88 @@
+.content {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+    background-color: #E6E6FA;
+    
+  }
+  
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+
+   .image{
+    background-image: url("../../assets/images/Reenu.png");
+    background-color: #E6E6FA;
+    border-radius: 50%; 
+    background-size: cover;
+    margin-left: 114px;
+    background-position: center;
+    color: rgb(251, 251, 251);
+    margin-top: 10px;
+    padding: 20px; 
+    width: 230px; 
+    height: 230px; 
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  
+}
+  
+  .right:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  
+  .about-me {
+    max-width: 800px;
+    width: 85%;
+    height:100%;
+    background: #770737; 
+    border-radius: 16px;
+    padding: 20px 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-left:100%;
+  }
+  
+
+  
+    .about-me h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: #D8BFD8; /* Dark green for title */
+    }
+    
+    .about-me p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #D8BFD8; /* Matches the title */
+    }
+  
+    .about-me button {
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 0 10px;
+      background: #D8BFD8; /* Dark green for buttons */
+      color: #630330; /* Beige text on buttons */
+      transition: all 0.3s ease;
+    }
+    
+    .about-me button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(1, 50, 32, 0.5); /* Subtle dark green shadow */
+    }
+
+
+  
+
+  
