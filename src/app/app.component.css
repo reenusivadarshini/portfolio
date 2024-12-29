@@ -1,0 +1,18 @@
+.full {
+    scroll-behavior: smooth;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #860909;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #a72892;
+    }
+  }
+
+
+  

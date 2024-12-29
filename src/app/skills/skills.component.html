@@ -1,30 +1,18 @@
 <div class="skills-container">
-    <h2>My Skills</h2>
+    <h2 style="color:#953553">My Skills</h2>
   
     <!-- Programming Skills -->
     <div class="skills-section">
-      <h3>Programming Skills</h3>
       <div class="grid">
         <div *ngFor="let skill of programmingSkills" class="col-12 md:col-5 lg:col-3 skill-card">
           <h4>{{ skill.name }}</h4>
           <div class="rating">
-            <span *ngFor="let star of stars(skill.rating); let i = index">
-              <i class="fa" [ngClass]="{'fa-star': i < skill.rating, 'fa-star-o': i >= skill.rating}"></i>
-            </span>
             <span class="rating-text">{{ skill.rating }}/5</span>
           </div>
         </div>
       </div>
     </div>
-  
-    <!-- Soft Skills -->
-    <div class="skills-section">
-      <h3>Soft Skills</h3>
-      <div class="grid">
-        <div *ngFor="let skill of softSkills" class="col-12 md:col-5 lg:col-3 soft-skill-card">
-          {{ skill }}
-        </div>
-      </div>
-    </div>
   </div>
+  
+
   

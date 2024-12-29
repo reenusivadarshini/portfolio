@@ -42,11 +42,11 @@
 
  .typewriter  {
      font-size: 4em !important;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     padding-top:180px;
     overflow: hidden;
     display: inline-block;
-    animation: blink 0.75s step-end infinite;
+    /* animation: blink 0.75s step-end infinite; */
   }
   
   @keyframes blink {
@@ -124,3 +124,122 @@
       display: none; /* Hides the right column */
     }
   }
+
+:host {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #E6E6FA;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .strip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  .strip.even-strip {
+    animation: scroll-vertical-down 55s linear infinite;
+  }
+
+    .strip.odd-strip {
+      animation: scroll-vertical-up 55s linear infinite;
+      animation-delay: -23s;
+
+
+    }
+  
+  
+  .polaroid {
+    width: 240px;
+    height: 300px;
+    margin: 0;
+    background-color: rgb(9, 9, 9);
+    border: 8px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .polaroid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+
+  @keyframes scroll-vertical-up {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes scroll-vertical-down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 71%; /* Adjust as needed */
+  text-align: center;
+  z-index: 20;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.title h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  color: #673147;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: blink 0.7s step-end infinite;
+  display: inline-block;
+}
+
+
+.fixed-background {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%; /* Background covers the entire container */
+  height: 27%;
+  background: rgba(255, 255, 255, 0.8); /* Add background for better readability */
+  z-index: -1; /* Ensure it stays behind the text */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+
+
+
+
+
+
+  

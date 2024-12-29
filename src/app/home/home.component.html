@@ -1,32 +1,59 @@
-<div>
-    <div class="navBar">
-        <nav class="navbar">
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#photographs">Photographs</a>
-            <a href="#contact">Contact</a>
-          </nav>
+
+<div class="container grid bg ">
+    <div class="strip even-strip col-12 md:col-5 lg:col-2" *ngFor="let strip of strips1">
+      <div class="polaroid "*ngFor="let photo of strip">
+        <img [src]="photo.src" [alt]="photo.alt" />
+      </div>
+      <div class="polaroid" *ngFor="let photo of strip">
+        <img [src]="photo.src" [alt]="photo.alt" />
+      </div>
     </div>
-    <div class="grid content">
-        <div class=" col-12 md:col-5 lg:col-3 left">
-            <div class="about-me">
-                <h1>About Me</h1>
-                <p>
-             I’m Reenu Sivadarshini, an independent and self-driven individual passionate about learning and adapting to new challenges. With a knack for leadership and collaboration,
-              I thrive in both team-oriented and individual settings. My core strengths lie in effective communication, problem-solving, and resilience, which enable me to excel in diverse environments.
-               As someone deeply interested in Full Stack Development and innovative solutions, I constantly seek opportunities to grow and contribute meaningfully. Let’s connect and share ideas to make a positive impact!  
-                </p>
-                <div class="buttons">
-                    <button (click)="downloadCV()">Download Resume</button>
-                  </div>    
-              </div>
+    <div class="strip odd-strip col-12 md:col-5 lg:col-2" *ngFor="let strip of strips2">
+        <div class="polaroid" *ngFor="let photo of strip">
+          <img [src]="photo.src" [alt]="photo.alt" />
         </div>
-        <div class="col-12 md:col-7 lg:col-9 right">
-            <h1 class="typewriter"> 
-                {{ displayText }}</h1>
+        <div class="polaroid" *ngFor="let photo of strip">
+            <img [src]="photo.src" [alt]="photo.alt" />
+          </div>
+      </div>
+      <div class="strip even-strip col-12 md:col-5 lg:col-2" *ngFor="let strip of strips3">
+        <div class="polaroid" *ngFor="let photo of strip"
+        >
+          <img [src]="photo.src" [alt]="photo.alt" />
+        </div>
+        <div class="polaroid" *ngFor="let photo of strip">
+            <img [src]="photo.src" [alt]="photo.alt" />
+          </div>
+      </div>
+      <div class="strip odd-strip col-12 md:col-5 lg:col-2" *ngFor="let strip of strips4">
+        <div class="polaroid" *ngFor="let photo of strip">
+          <img [src]="photo.src" [alt]="photo.alt" />
+        </div>
+        <div class="polaroid" *ngFor="let photo of strip">
+            <img [src]="photo.src" [alt]="photo.alt" />
+          </div>
+      </div>
+      <div class="strip even-strip col-12 md:col-5 lg:col-2" *ngFor="let strip of strips5">
+        <div class="polaroid" *ngFor="let photo of strip">
+          <img [src]="photo.src" [alt]="photo.alt" />
+        </div>
+        <div class="polaroid" *ngFor="let photo of strip">
+            <img [src]="photo.src" [alt]="photo.alt" />
+          </div>
+      </div>
+      <div class="strip odd-strip col-12 md:col-5 lg:col-2" *ngFor="let strip of strips5">
+        <div class="polaroid" *ngFor="let photo of strip">
+          <img [src]="photo.src" [alt]="photo.alt" />
+        </div>
+              <div class="polaroid" *ngFor="let photo of strip">
+        <img [src]="photo.src" [alt]="photo.alt" />
+      </div>
+  </div>
+  
+  <div class=" grid title">
+	<span class="fixed-background"></span>
+	<h1 class=" col-12 typewriter"> 
+		{{ displayText }}</h1>
 
 
-        </div>
-    </div>
 </div>
