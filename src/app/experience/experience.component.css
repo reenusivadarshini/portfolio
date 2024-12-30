@@ -1,9 +1,5 @@
-.full {
-    scroll-behavior: smooth;
-  }
 
-
-  .navbar {
+.navbar {
     display: flex;
     justify-content: center;
     background: linear-gradient(90deg, #9F2B68, #BF40BF, #bb4a66, #7e4774, #AA336A);

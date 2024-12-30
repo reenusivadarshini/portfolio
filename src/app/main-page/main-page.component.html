@@ -1,0 +1,26 @@
+<div class="full">
+    <nav class="navbar">
+      <a routerLink="/home" fragment="home">Home</a>
+      <a routerLink="/home" fragment="about">About</a>
+      <a routerLink="/home" fragment="projects">Projects</a>
+      <a routerLink="/photograph" routerLinkActive="active">Photographs</a>
+      <a routerLink="/home" fragment="skills">Skills</a>
+      <a routerLink="/experience" routerLinkActive="active">Experience</a>
+      <a routerLink="/home" fragment="contact">Contact</a>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+  
+  <div id="home">
+    <app-home></app-home>
+  </div>
+  <div id="about">
+    <app-about></app-about>
+  </div>
+  <div id="skills">
+    <app-skills></app-skills>
+  </div>
+  <div id="contact">
+    <app-contact></app-contact>
+  </div>
+  
