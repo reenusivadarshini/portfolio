@@ -10,12 +10,14 @@
   </nav>
   <router-outlet></router-outlet>
 
-  
-    <div class="photography-content">
-      <h1>Photographs</h1>
+  <div class="photo">
+  <div class="polaroid-grid">
+    <div *ngFor="let image of images" class="polaroid">
+      <img [src]="image.url" [alt]="image.caption" />
+      <div class="caption">{{ image.caption }}</div>
     </div>
-  
+  </div>
+</div>
     <div id="contact">
       <app-contact></app-contact>
     </div>
-  </div>
